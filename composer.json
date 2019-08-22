@@ -1,13 +1,24 @@
 {
-    "name": "sMyModule/ssNewMod",
+    "name": "codModVend/codMod",
     "type": "library",
-    "description": "Simple Composer",
+    "description": "Logging for PHP 5.3",
+    "keywords": ["log","logging"],
+    "homepage": "https://github.com/Seldaek/monolog",
     "license": "MIT",
     "authors": [
-        {"name": "Rajath SB", "email": "rajath402@gmail.com"}
+        {
+            "name": "Jordi Boggiano",
+            "email": "j.boggiano@seld.be",
+            "homepage": "http://seld.be",
+            "role": "Developer"
+        }
     ],
     "require": {
-        "php": "^7.1"
+        "php": ">=5.3.0"
     },
-    "version": "0.0.1"
+    "autoload": {
+        "psr-0": {
+            "Monolog": "src"
+        }
+    }
 }
